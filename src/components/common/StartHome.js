@@ -134,21 +134,21 @@ const StartHome = () => {
   }, []);
 
   // 위치 정보를 가져오는 함수
-  useEffect(() => {
-    const getLocation = () => {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-          (position) => {
-            setLatitude(position.coords.latitude);
-            setLongitude(position.coords.longitude);
-          },
-        );
-      } 
-    };
+  //useEffect(() => {
+  //  const getLocation = () => {
+  //    if (navigator.geolocation) {
+  //      navigator.geolocation.getCurrentPosition(
+  //        (position) => {
+  //          setLatitude(position.coords.latitude);
+  //          setLongitude(position.coords.longitude);
+  //        },
+  //      );
+  //    } 
+  //  };
 
     // 위치 정보 가져오기
-    getLocation();
-  }, []);
+  //  getLocation();
+  //}, []);
 
   const saveDataToMongoDB = async () => {
     try {
